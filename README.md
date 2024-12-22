@@ -27,7 +27,15 @@ Welcome to **MediTrain AI** 💡, an AI-powered medical assistant designed to pr
 - **🩺 Medical Question-Answering**: Provides detailed answers to medical questions based on documents and retrieved context.
 
 ---
+## 📸 Screenshots
 
+Here are some screenshots of **MediTrain AI** in action:
+
+### 1. Chat Interface
+![Chat Interface](Image/S1.png)
+
+
+---
 ## 💡 Features
 
 ✨ **Accurate Answers**: Ask medical questions and receive precise, clear, and medically relevant answers.
