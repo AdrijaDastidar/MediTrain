@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Allerta+Stencil&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap");
@@ -11,16 +10,17 @@ html {
   overflow-x: hidden;
   margin: 0;
   background: rgb(44, 47, 59);
+  background: rgb(44, 47, 59);
   background: -webkit-linear-gradient(
     to right,
-    rgb(40, 59, 34),
-    rgb(54, 60, 70),
-    rgb(32, 32, 43)
+    rgb(43, 121, 141),
+    rgb(18, 49, 112),
+    rgb(33, 33, 78)
   );
   background: linear-gradient(
     to right,
-    rgb(38, 51, 61),
-    rgb(50, 55, 65),
+    rgb(43, 121, 141),
+    rgb(18, 49, 112),
     rgb(33, 33, 78)
   );
 }
@@ -354,55 +354,60 @@ ul.menu {
 
 /* ----------------------------------About us ----------------------------------------- */
 
-#aboutUs {
+#aboutUs, #contactUs {
   background: rgb(44, 47, 59);
-  background: -webkit-linear-gradient(
-    to right,
-    rgb(40, 59, 34),
-    rgb(54, 60, 70),
-    rgb(32, 32, 43)
-  );
-  background: linear-gradient(
-    to right,
-    rgb(38, 51, 61),
-    rgb(50, 55, 65),
-    rgb(33, 33, 78)
-  );
+  background: -webkit-linear-gradient(to right, rgb(43, 121, 141), rgb(18, 49, 112), rgb(33, 33, 78));
+  background: linear-gradient(to right, rgb(43, 121, 141), rgb(18, 49, 112), rgb(33, 33, 78));
   padding: 60px 0;
 }
 
-#aboutUs .container {
+#aboutUs .container, #contactUs .container {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-#aboutUs .row {
+#aboutUs .row, #contactUs .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#aboutUs h2 {
+#aboutUs h2, #contactUs h2 {
   font-size: 36px;
   font-weight: 800;
   margin-bottom: 20px;
-  text-align: center;
-  color: #ffffff;
+  text-align: left !important;
+  color: #5ecef0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#aboutUs h3, #contactUs h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #c5e6f5;
   font-family: Poppins;
 }
 
-#aboutUs p {
+#aboutUs p, #contactUs p {
   font-size: 18px;
-  font-family: Poppins;
+  font-family: Roboto;
   line-height: 1.6;
-  color: #c2bfbf;
+  color: #f3f3f3;
 }
 
-#aboutUs .col-md-6 {
+#contactUs label {
+  font-size: 18px;
+  font-family: Roboto;
+  line-height: 1.6;
+  color: #ced0ff;
+}
+
+#aboutUs .col-md-6, #contactUs .col-md-6 {
   padding: 20px;
 }
 
-#aboutUs img {
+#aboutUs img, #contactUs img {
   max-width: 80%;
   height: auto;
   border-radius: 10px;

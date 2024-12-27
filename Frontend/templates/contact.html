@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chatbot</title>
+    <title>Contact Us</title>
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon" />
 
     <!-- -------------------------------- CSS & FontAwesome Links ------------------------------ -->
@@ -44,13 +44,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link"  href="/">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+              <a class="nav-link" href="/about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact Us</a>
+              <a class="nav-link active" aria-current="page" href="/contact">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#doc">Documentation</a>
@@ -60,22 +60,38 @@
       </div>
     </nav>
 
-    <!-- -------------------------------- About Us Section ------------------------------ -->
-    <section id="aboutUs" class="py-10">
-      <div class="container ">
+    <!-- -------------------------------- Contact Us Section ------------------------------ -->
+    <section id="contactUs" class="py-10">
+      <div class="container">
         <div class="row">
-          <div class="col-md-8 py-5 my-5">
-            <h2 class="text-center">About Us</h2>
-            <h3>Welcome to MediTrain AI </h3>
+          <div class="col-md-8 py-5">
+            <h2 class="text-center">Contact Us</h2>
             <p class="lead">
-                MediTrain AI is your go-to chatbot for fast, accurate medical insights. Powered by cutting-edge AI and machine learning, our system understands your queries and delivers trusted information, anytime, anywhere. Whether you’re a healthcare professional or just seeking answers, we're here to help!                
-                With advanced tools like Pinecone and Groq, we provide real-time, relevant responses, bridging the gap between technology and healthcare. Let’s make healthcare smarter together! 
+              Have any questions or need assistance? Reach out to us, and we'll get back to you as soon as possible. 
+              Whether it's about our services or technical support, we're here to help you.
             </p>
+            
+            <!-- Contact Form -->
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Full Name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
           <div class="col">
             <img
-              src="static/img1.png"
-              alt="About Us Image"
+              src="static/img2.png"
+              alt="Contact Us Image"
               class="img-fluid rounded"
             />
           </div>

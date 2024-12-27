@@ -33,6 +33,10 @@ Here are some screenshots of **MediTrain AI** in action:
 
 ### 1. Chat Interface
 ![Chat Interface](Image/S1.png)
+### 2. About Section
+![About Section](Image/S2.png)
+### 3. Contact Us
+![Contact Us](Image/S3.png)
 
 
 ---

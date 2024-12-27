@@ -45,14 +45,18 @@ question_answer_chain = create_stuff_documents_chain(llm, prompt)
 rag_chain = create_retrieval_chain(retriever, question_answer_chain)
 
 
-# Home page
+# Routes
 @app.route("/")
 def home():
     return render_template('index.html')
 
-@app.route("/aboutus")
+@app.route("/about")
 def about():
     return render_template('about.html')
+
+@app.route("/contact")
+def contact():
+    return render_template('contact.html')
 
 # Chat | Get
 @app.route("/get", methods=["GET", "POST"])
