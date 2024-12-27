@@ -7,6 +7,7 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
 from Backend.prompt import *
+from waitress import serve
 import os
 
 app = Flask(__name__, static_folder="Frontend/static", template_folder="Frontend/templates")
@@ -72,4 +73,4 @@ def chat():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port= 8080, debug= True)
+    serve(host="0.0.0.0", port= 8080, debug= True)
