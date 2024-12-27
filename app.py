@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 from Backend.prompt import *
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="Frontend/static", template_folder="Frontend/templates")
 
 load_dotenv()
 
