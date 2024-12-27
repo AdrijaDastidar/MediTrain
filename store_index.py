@@ -1,4 +1,4 @@
-from src.helper import load_pdf_file, text_split, download_hugging_face_embeddings
+from Backend.helper import load_pdf_file, text_split, download_hugging_face_embeddings
 from pinecone import ServerlessSpec
 from pinecone.grpc import PineconeGRPC as Pinecone
 from langchain_pinecone import PineconeVectorStore
