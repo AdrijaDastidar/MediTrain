@@ -47,9 +47,12 @@ rag_chain = create_retrieval_chain(retriever, question_answer_chain)
 
 # Home page
 @app.route("/")
-def index():
+def home():
     return render_template('index.html')
 
+@app.route("/aboutus")
+def about():
+    return render_template('about.html')
 
 # Chat | Get
 @app.route("/get", methods=["GET", "POST"])
