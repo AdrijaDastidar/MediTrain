@@ -2,6 +2,8 @@
 
 Welcome to **MediTrain AI** 💡, an AI-powered medical assistant designed to provide accurate and concise information about medical topics. Built with state-of-the-art technologies like Pinecone for vector search and Groq for high-performance inference, this project is your personal medical encyclopedia, powered by machine learning models.
 
+ Live Link - https://meditrain-0r3t.onrender.com
+
 ---
 
 ## 📖 Table of Contents
