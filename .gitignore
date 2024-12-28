@@ -1,2 +1,4 @@
 .env
 .vscode/*
+.venv/*
+MediTrain_AI_Project.egg-info/
